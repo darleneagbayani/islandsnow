@@ -4,22 +4,41 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+
 
 </head>
 <body>
 
-<div class="ui container">
-<div class="ui fixed top inverted four item menu">
-  <a class="item" href="#men">MEN</a>
-  <a class="item" href="#women">WOMEN</a>
-  <a class="item" href="#kids">KIDS</a>
-  <a class="item" href="#brands">BRANDS</a>
-  <a class="item" href="#search">SEARCH</a>
+<div class="ui borderless menu">
+  <div class="ui container">
+    <a class="fitted item"><i class="facebook f icon"></i></a>
+    <a class="fitted item"><i class="twitter icon"></i></a>
+    <a class="fitted item"><i class="pinterest icon"></i></a>
+    <a class="fitted item"><i class="instagram icon"></i></a>
+    <div class="right menu">
+      <a class="fitted item"><i class="home icon"></i></a>
+      <a class="fitted item"><i class="search icon"></i></a>
+      <a class="fitted item"><i class="user icon"></i></a>
+      <div class="ui dropdown fitted item">
+        <div class="text">MY CART 0</div>
+        <i class="shop icon"></i><i class="caret down icon"></i>
+        <div class="menu">
+          <div class="item">My cart is currently empty.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    $('.ui.dropdown').dropdown('show');
+  </script>
 </div>
-</div>
+
 
 </body>
 </html>
